@@ -41,15 +41,19 @@ function setup(){
 function draw(){
     background(51);
     
+    push();
     noStroke();
     textSize(25);
     fill("white");
     text("Score:"+score,width-300,50);
+    pop();
 
     Engine.update(engine);
 
     ground1.display();
     ground2.display();
+    
+    rope.display();
 
     box1.display();
     box1.score();
@@ -82,8 +86,6 @@ function draw(){
     box10.score();
 
     ball.display();
-
-    rope.display();
 
     text(mouseX+","+mouseY,mouseX,mouseY);
 }
