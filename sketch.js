@@ -40,13 +40,9 @@ function setup(){
 
 function draw(){
     background(51);
-    
-    push();
-    noStroke();
-    textSize(25);
-    fill("white");
+   
     text("Score:"+score,width-300,50);
-    pop();
+    
 
     Engine.update(engine);
 
