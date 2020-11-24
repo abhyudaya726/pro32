@@ -12,7 +12,7 @@ class Box{
     }
     display(){
 
-        if(this.body.speed<3){
+        if(this.body.speed>3){
             var pos = this.body.position;
             var angle = this.body.angle;
 
