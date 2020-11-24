@@ -11,7 +11,7 @@ var box1,box2,box3,box4,box5,box6,box7,box8,box9,box10;
 
 var ball,rope;
 
-var score;
+var score = 0;
 
 function setup(){
     createCanvas(600,400);
